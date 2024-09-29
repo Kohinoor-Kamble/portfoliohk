@@ -1,0 +1,331 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161b22;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+.header {
+    background: #1c2025;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeInDown 1s ease forwards;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #20c997;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    background: #1c2025;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #20c997;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #20c997;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.hero .btn:hover {
+    transform: scale(1.05);
+}
+
+.hero .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.hero .social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.profile-pic img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.profile-pic img:hover {
+    transform: scale(1.05);
+}
+
+.about-me {
+    max-width: 600px;
+}
+
+.about-me h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.about-me button {
+    padding: 10px 20px;
+    background-color: #20c997;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.about-me button:hover {
+    transform: scale(1.05);
+}
+
+/* Services Section */
+.services-section {
+    padding: 100px 50px;
+    background: #1c2025;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #20c997;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1e242d;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 100px 50px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 2s;
+}
+
+.container_card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards {
+    background-color: #1e242d;
+    width: 30%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.cards:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #20c997;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 50px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 2.5s;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e242d;
+    color: #ffffff;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #20c997;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #1c2025;
+    color: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
